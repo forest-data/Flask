@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+这是个模板 <br>
+这是首页<br>
+
+{# 注释 #}
+{{url_str}}<br>
+
+{# 列表 #}
+{{my_list}}
+{{my_list.2}}
+{{my_list[2]}}
+
+{# 字典 #}
+{{my_dict}}
+{{my_dict.name}}
+{{my_dict['name']}}
+
+
+{# 控制代码块 #}
+{% for num in my_list %}
+    {{num}} <br>
+    {% if num > 3 %}
+        {{num}}
+    {% endif %}
+{% endfor %}
+
+{{ "hello" | upper | reverse }}
+
+</body>
+</html>
